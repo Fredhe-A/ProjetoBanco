@@ -1,5 +1,7 @@
 package com.db.academia.entity;
 
+import java.sql.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,7 +19,7 @@ public class FichaTreino {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "DATATREINO")
-    private long DATATREINO;
+    private Date DATATREINO;
 
     @Column()
     private int repeticoes;
