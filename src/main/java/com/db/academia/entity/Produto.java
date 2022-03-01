@@ -1,4 +1,5 @@
 package com.db.academia.entity;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,22 +10,18 @@ import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name = "professor")
+@Table(name = "produto")
 @Data
-public class Professor {
+
+public class Produto {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idprofessor")
-    private long idprofessor;
+    @Column(name = "idproduto")
+    private long idproduto;
 
     @Column()
-    private char sexo;
-    private String formacao;
-    private double salario;
-    private String nomeProfessor;
-    private String telefone;
-    private int idadeProfessor;
-    private String periodo;
+    private double valor_produto;
+    private String nome_produto;
+    
 }
-

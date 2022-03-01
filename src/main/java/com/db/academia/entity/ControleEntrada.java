@@ -1,4 +1,11 @@
 package com.db.academia.entity;
+
+
+
+
+
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,25 +13,24 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 import lombok.Data;
 
 @Entity
-@Table(name = "professor")
+@Table(name = "contreleEntrada")
 @Data
-public class Professor {
+
+public class ControleEntrada {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idprofessor")
-    private long idprofessor;
+    @Column(name = "idcontrole")
+    private long idcontrole;
 
     @Column()
-    private char sexo;
-    private String formacao;
-    private double salario;
-    private String nomeProfessor;
-    private String telefone;
-    private int idadeProfessor;
-    private String periodo;
+    private Date datahora_entrada;
+    private Date datahora_saida;
+    private int idaluno;
+    private int idacademia;
+    
 }
-
