@@ -16,15 +16,14 @@ public class FichaTreino {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IDPROFESSOR")
-    private long IDPROFESSOR;
+    @Column(name = "DATATREINO")
+    private long DATATREINO;
 
     @Column()
-    private char sexo;
-    private String formacao;
-    private double salario;
-    private String nomeProfessor;
-    private String telefone;
-    private int idadeProfessor;
-    private String periodo;  
+    private int repeticoes;
+    private int series;
+    private String divisaoTreino;
+    private long IDPROFESSOR;
+    private String IDALUNO;
+    private int IDTREINO;
 }
